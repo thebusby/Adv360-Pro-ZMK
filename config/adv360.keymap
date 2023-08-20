@@ -39,25 +39,13 @@
   keymap {
     compatible = "zmk,keymap";
     
-    // z /
-    // - \
-    // / z
-    // \ -
-
-    // On mac DVORAK mode;
-    // EQUAL is RBKT 
-    // MINUS is LBKT
-    // BSLH is BSLH
-    // LBKT is FSLH-
-    // RBKT is EQUAL 
-
     default_layer {
       bindings = <
-        &kp RBKT  &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 AKEY                                                             KKEY  &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp BSLH
+        &kp RBKT  &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 AKEY                                                             KKEY  &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp FSLH
         MCTRL     &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LGUI  &kp LALT &kp RCTRL  &kp ESC            &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp LBKT &kp RSHFT
-        &mo 1     &sl 1     &kp GRAVE &kp LEFT &kp RIGHT               &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp MINUS &kp EQUAL &mo 1
+        &mo 1     &sl 1     &kp GRAVE &kp LEFT &kp RIGHT               &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp BSLH &kp EQUAL &mo 1
       >;
     };
     fn {
